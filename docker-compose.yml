@@ -1,0 +1,30 @@
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server:latest
+    container_name: mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoroot
+      MONGO_INITDB_ROOT_PASSWORD: MongoRoo1P@ss
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+
+  oracle:
+    image: container-registry.oracle.com/database/enterprise:19.3.0.0
+    container_name: oracle19
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    environment:
+      ORACLE_PWD: OraclePass123
+      ORACLE_SID: ORCLCDB
+      ORACLE_PDB: ORCLPDB1
+    volumes:
+      - ora_data:/opt/oracle/oradata
+    shm_size: "2g"
+
+volumes:
+  mongo_data:
+  ora_data:
