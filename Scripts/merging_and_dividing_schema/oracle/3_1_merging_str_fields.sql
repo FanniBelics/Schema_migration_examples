@@ -104,7 +104,7 @@ commit;
 --Updating already existing data
 update UPDATED_ENTITY
 set UPDATED_ENTITY.MERGED_STRING_FIELD = FIELD_TO_JOIN_STR_P1 || ' ' || FIELD_TO_JOIN_STR_P2
-    --, UPDATED_ENTITY.SCHEMA_VERSION = 3 --In case they are the only/last field to update
+    --, UPDATED_ENTITY.SCHEMA_VERSION = 2 --In case they are the only/last field to update
 where UPDATED_ENTITY.SCHEMA_VERSION = 1;
 commit;
 
@@ -125,4 +125,3 @@ ALTER TABLE UPDATED_ENTITY
 DROP COLUMN SCHEMA_VERSION;
 */
 
---DROP TRIGGER MERGE_STRING_AUTOMATICALLY_TGR;
