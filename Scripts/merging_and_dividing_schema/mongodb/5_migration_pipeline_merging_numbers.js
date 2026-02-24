@@ -1,4 +1,4 @@
-// Add new fields to the database
+//Update the schema
 db.runCommand({
     collMod: "divideAndMerge_UpdatedSchema",
     validator: {
@@ -15,7 +15,7 @@ db.runCommand({
                         },
                     field_to_divide_num:{
                         bsonType: ["int","double"],
-                        description: "double that is going to be divided"
+                        description: "doubleeger that is going to be divided"
                     },
                     field_to_join_str_p1:{
                         bsonType: "string",
@@ -40,7 +40,11 @@ db.runCommand({
                     merged_str_field:{
                         bsonType: "string",
                         description: "Merged string, since version 2"
-                    }
+                    },
+                    merged_num_field:{
+                        bsonType: "number",
+                        description: "Merged number, since version 2"
+                        }
                     }
                 }
                 },
@@ -48,31 +52,55 @@ db.runCommand({
     validationAction: "warn"
 });
 
-// Add some version 2 test data
-db.divideAndMerge_UpdatedSchema.insertMany([
-    {
-        sample_field : "Test Data For str merge 1",
-        merged_str_field: "Merged STR field, no worries",
-        schemaVersion: 2
-    },
-    {
-        sample_field : "Test Data For str merge 2",
-        merged_str_field: "Merged STR field 2 no worries",
-        schemaVersion: 2
-    }
-]
-)
-
-// Add the merging algorithm
-
+// First version, merging numbers by multiplication
 db.divideAndMerge_UpdatedSchema.updateMany(
     {
-        schemaVersion:1
+        $and:[
+            {schemaVersion:1},
+            {field_to_join_num_p1: {$exists: true}}
+            ]
     },
     [{
         $set: {
-            merged_str_field :
-                {$concat: ["$field_to_join_str_p1", " ", "$field_to_join_str_p2"]}
-        }
+            merged_num_field : {
+                $multiply: ["$field_to_join_num_p1", "$field_to_join_num_p2"]
+            }
+            }
     }]
+)
+
+// Second version, merge with decision
+db.divideAndMerge_UpdatedSchema.updateMany(
+  {
+    schemaVersion: 1,
+    field_to_join_num_p1: { $exists: true }
+  },
+  [
+    {
+      $set: {
+        merged_num_field: {
+          $cond: {
+            if: {
+              $eq: [
+                { $mod: ["$field_to_join_num_p1", 2] },
+                0
+              ]
+            },
+            then: {
+              $multiply: [
+                "$field_to_join_num_p1",
+                "$field_to_join_num_p2"
+              ]
+            },
+            else: {
+              $multiply: [
+                { $add: ["$field_to_join_num_p1", 1] },
+                "$field_to_join_num_p2"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
 )
