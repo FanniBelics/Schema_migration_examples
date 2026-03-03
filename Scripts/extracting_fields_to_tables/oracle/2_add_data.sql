@@ -15,3 +15,5 @@ values (2, 'Outer2', 'Wrapper field number 2', -45.24, 'EFG112', 5) ;
 
 insert into UPDATED_TABLE_2(ID, OUTER_FIELD_1, FIELD_TO_WRAP_1, FIELD_TO_WRAP_2, FIELD_TO_WRAP_3, OUTER_FIELD_2)
 values (3, 'Outer1', NULL, 15.244, 'ABC123', 6) ;
+
+commit;
