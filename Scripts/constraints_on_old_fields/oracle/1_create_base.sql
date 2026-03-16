@@ -6,6 +6,9 @@ create table base_table(
     check_on_other_field number(2,0),
     ceiler_for_pervious number(3,0),
     default_constraint varchar2(50) default 'Default',
-    not_null_field varchar2(50) constraint base_not_null not null
+    not_null_field varchar2(50) constraint base_not_null not null,
+
+    constraint base_table_chk_with_ceiler check ( check_on_other_field < ceiler_for_pervious )
 );
+
 
