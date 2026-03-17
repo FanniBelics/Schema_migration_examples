@@ -18,3 +18,5 @@ insert into CONSTRAINT_ON_OLD_SCHEMA.BASE_TABLE(
         CEILER_FOR_PERVIOUS, DEFAULT_CONSTRAINT,
         NOT_NULL_FIELD)
 values (3, 30, 99, 49, 50, 'Not default value 2', 'Not null 3');
+
+commit;
