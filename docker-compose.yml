@@ -23,6 +23,7 @@ services:
       ORACLE_PDB: ORCLPDB1
     volumes:
       - ora_data:/opt/oracle/oradata
+      - ./oracle_shared:/opt/oracle/external
     shm_size: "2g"
 
 volumes:
