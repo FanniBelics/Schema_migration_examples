@@ -3,3 +3,6 @@ oracle_shared
 mongo_data
 ora_data
 .env
+.vscode
+__pycache__
+*.zip
