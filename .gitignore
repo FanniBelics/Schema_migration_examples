@@ -2,3 +2,4 @@
 oracle_shared
 mongo_data
 ora_data
+.env
