@@ -44,5 +44,9 @@ UPDATE sh.countries SET country_iso_code_3 = 'SGP' WHERE country_id = 52769
 /
 UPDATE sh.countries SET country_iso_code_3 = 'ITA' WHERE country_id = 52770
 /
+
+UPDATE sh.countries SET country_iso_code_3 = 'TAT' WHERE country_id between 0 and 10000
+/
+
 COMMIT
 /

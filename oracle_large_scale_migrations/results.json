@@ -1,24 +1,54 @@
 {
   "expanding_country_table": [
     {
-      "step_name": "add_column_before_select",
+      "step_name": "add_column_before_migration_insert",
       "phase": "before_migration",
-      "time_cost": 0.005468399991514161
+      "time_cost": 9.964155800000299
+    },
+    {
+      "step_name": "add_column_before_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.003105600015260279
+    },
+    {
+      "step_name": "add_column_before_migration_update",
+      "phase": "in_migration_state",
+      "time_cost": 14.081166899995878
+    },
+    {
+      "step_name": "add_column_before_migration_delete",
+      "phase": "before_migration",
+      "time_cost": 49.27596729999641
     },
     {
       "step_name": "add_column_in_migration_add_column",
       "phase": "in_migration_state",
-      "time_cost": 0.025771800021175295
+      "time_cost": 0.05094980000285432
     },
     {
       "step_name": "add_column_in_migration_fill_columns",
       "phase": "in_migration_state",
-      "time_cost": 0.04677230000379495
+      "time_cost": 0.0473348000086844
+    },
+    {
+      "step_name": "add_column_after_migration_insert",
+      "phase": "after_migration",
+      "time_cost": 11.711834899993846
     },
     {
       "step_name": "add_column_after_migration_select",
       "phase": "after_migration",
-      "time_cost": 0.0021333999757189304
+      "time_cost": 0.0030350000015459955
+    },
+    {
+      "step_name": "add_column_after_migration_update",
+      "phase": "after_migration",
+      "time_cost": 16.64268579997588
+    },
+    {
+      "step_name": "add_column_after_migration_delete",
+      "phase": "after_migration",
+      "time_cost": 49.99617890000809
     }
   ]
 }
