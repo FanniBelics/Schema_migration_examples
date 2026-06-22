@@ -3,22 +3,22 @@
     {
       "step_name": "add_column_before_select",
       "phase": "before_migration",
-      "time_cost": 0.005183800007216632
+      "time_cost": 0.005468399991514161
     },
     {
       "step_name": "add_column_in_migration_add_column",
       "phase": "in_migration_state",
-      "time_cost": 0.01624270001775585
+      "time_cost": 0.025771800021175295
     },
     {
       "step_name": "add_column_in_migration_fill_columns",
       "phase": "in_migration_state",
-      "time_cost": 0.036697100003948435
+      "time_cost": 0.04677230000379495
     },
     {
       "step_name": "add_column_after_migration_select",
       "phase": "after_migration",
-      "time_cost": 0.0018816000083461404
+      "time_cost": 0.0021333999757189304
     }
   ]
 }
