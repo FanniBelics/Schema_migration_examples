@@ -36,8 +36,7 @@ def execute_sql_file(file_name):
         statements = split_sql_statements(sql_script)
         for statement in statements:
             cursor.execute(statement)
-        rows = cursor.fetchall()
-        return rows
+       
     except Exception as e:
         print(f"Error occurred while executing {file_name}: {e}")
         raise
