@@ -14,7 +14,7 @@ conn = oracledb.connect(
     service_name=os.getenv("SERVICE_NAME")
 )
 
-script_filepath = './sql/'
+script_filepath = './oracle_large_scale_migrations/sql/'
 
 def test_run():
     cursor = conn.cursor()
