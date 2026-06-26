@@ -39,7 +39,7 @@ def add_column_to_country():
         execute_sql_file("add_column/add_column_to_country_migration_update.sql")
         
         results_in_migration_update[json_tags.step_name.value] = 'add_column_before_migration_update'
-        results_in_migration_update[json_tags.phase.value] = states.in_migration_state.value
+        results_in_migration_update[json_tags.phase.value] = states.before_migration.value
         
     record_step(label, results_in_migration_update)
     
@@ -119,7 +119,136 @@ def add_column_to_country():
     
 
 def merge_first_and_last_name_in_customer():
-    pass
+    label = "merging_first_and_last_name_in_customer"
+    
+    # #Before migration measurements
+    # print("Exec: before migration select")
+    # with measure(label) as results_before_migration_select:
+    #     execute_sql_file("merge_columns/merge_columns_migration_select.sql")
+        
+    #     results_before_migration_select[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_before_migration_select'
+    #     results_before_migration_select[json_tags.phase.value] = states.before_migration.value
+    
+    # record_step(label, results_before_migration_select)
+    
+    # print("Exec: Before migration insert")
+    # with measure(label) as results_before_migration_insert:
+    #     execute_sql_file("merge_columns/merge_columns_before_migration_insert.sql")
+        
+    #     results_before_migration_insert[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_before_migration_insert'
+    #     results_before_migration_insert[json_tags.phase.value] = states.before_migration.value
+    
+    # record_step(label, results_before_migration_insert)
+    
+    # print("Exec: before migration update")
+    # with measure(label) as results_before_migration_update:
+    #     execute_sql_file("merge_columns/merge_columns_migration_update.sql")
+        
+    #     results_before_migration_update[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_before_migration_update'
+    #     results_before_migration_update[json_tags.phase.value] = states.before_migration.value
+
+    # record_step(label, results_before_migration_update)
+    
+    # print("Exec: before migration delete")
+    # with measure(label) as results_before_migration_delete:
+    #     execute_sql_file("merge_columns/merge_columns_migration_delete.sql")
+        
+    #     results_before_migration_delete[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_before_migration_delete'
+    #     results_before_migration_delete[json_tags.phase.value] = states.before_migration.value
+
+    # record_step(label, results_before_migration_delete)
+    
+    # #The actual migration steps
+    # print("Exec: migration")
+    # with measure(label) as results_in_migration:
+    #     execute_sql_file("merge_columns/merge_columns_in_migration_migration.sql")
+        
+    #     results_in_migration[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_in_migration_migration'
+    #     results_in_migration[json_tags.phase.value] = states.in_migration_state.value
+    
+    # record_step(label, results_in_migration)
+    
+    # #In migration measures: select, insert, update and delete 
+    # print("Exec: in migration select")
+    # with measure(label) as results_in_migration_select:
+    #     execute_sql_file("merge_columns/merge_columns_migration_select.sql")
+        
+    #     results_in_migration_select[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_in_migration_select'
+    #     results_in_migration_select[json_tags.phase.value] = states.in_migration_state.value
+
+    # record_step(label, results_in_migration_select)
+    
+    # print("Exec: in migration insert")
+    # with measure(label) as results_in_migration_insert:
+    #     execute_sql_file("merge_columns/merge_columns_in_migration_insert.sql")
+        
+    #     results_in_migration_insert[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_in_migration_insert'
+    #     results_in_migration_insert[json_tags.phase.value] = states.in_migration_state.value
+
+    # record_step(label, results_in_migration_insert)
+    
+    # print("Exec: in migration update")
+    # with measure(label) as results_in_migration_update:
+    #     execute_sql_file("merge_columns/merge_columns_migration_update.sql")
+        
+    #     results_in_migration_update[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_in_migration_update'
+    #     results_in_migration_update[json_tags.phase.value] = states.in_migration_state.value
+
+    # record_step(label, results_in_migration_update)
+
+    # print("Exec: in migration delete")
+    # with measure(label) as results_in_migration_delete:
+    #     execute_sql_file("merge_columns/merge_columns_migration_delete.sql")
+        
+    #     results_in_migration_delete[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_in_migration_delete'
+    #     results_in_migration_delete[json_tags.phase.value] = states.in_migration_state.value
+
+    # record_step(label, results_in_migration_delete)
+    
+    print("Exec: finishing migration state")
+    with measure(label) as results_finishing_migration:
+        execute_sql_file("merge_columns/merge_columns_after_migration_close_migration.sql")
+        
+        results_finishing_migration[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_finishing_migration'
+        results_finishing_migration[json_tags.phase.value] = states.after_migration.value
+        
+    record_step(label, results_finishing_migration)
+    
+    print("Exec: after migration select")
+    with measure(label) as results_after_migration_select:
+        execute_sql_file("merge_columns/merge_columns_migration_select.sql")
+        
+        results_after_migration_select[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_after_migration_select'
+        results_after_migration_select[json_tags.phase.value] = states.after_migration.value
+        
+    record_step(label, results_after_migration_select)
+    
+    print("Exec: after migration insert")
+    with measure(label) as results_after_migration_insert:
+        execute_sql_file("merge_columns/merge_columns_after_migration_insert.sql")
+        
+        results_after_migration_insert[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_after_migration_insert'
+        results_after_migration_insert[json_tags.phase.value] = states.after_migration.value
+
+    record_step(label, results_after_migration_insert)
+    
+    print("Exec: after migration update")
+    with measure(label) as results_after_migration_update:
+        execute_sql_file("merge_columns/merge_columns_migration_update.sql")
+        
+        results_after_migration_update[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_after_migration_update'
+        results_after_migration_update[json_tags.phase.value] = states.after_migration.value
+
+    record_step(label, results_after_migration_update)
+    
+    print("Exec: after migration delete")
+    with measure(label) as results_after_migration_delete:
+        execute_sql_file("merge_columns/merge_columns_migration_delete.sql")
+        
+        results_after_migration_delete[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_after_migration_delete'
+        results_after_migration_delete[json_tags.phase.value] = states.after_migration.value
+
+    record_step(label, results_after_migration_delete)
 
 if __name__ == "__main__":
     # with measure("test_run") as results:
@@ -131,4 +260,5 @@ if __name__ == "__main__":
     # print(results)
     # record_step("test_additional_migration", results)
     
-    add_column_to_country()
+    #add_column_to_country()
+    merge_first_and_last_name_in_customer()

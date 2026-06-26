@@ -12,7 +12,7 @@
     },
     {
       "step_name": "add_column_before_migration_update",
-      "phase": "in_migration_state",
+      "phase": "before_migration",
       "time_cost": 14.081166899995878
     },
     {
@@ -49,6 +49,78 @@
       "step_name": "add_column_after_migration_delete",
       "phase": "after_migration",
       "time_cost": 49.99617890000809
+    }
+  ],
+  "merging_first_and_last_name_in_customer": [
+    {
+      "step_name": "merge_first_and_last_name_in_customer_before_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.009527300018817186
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_before_migration_insert",
+      "phase": "before_migration",
+      "time_cost": 22.236899599898607
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_before_migration_update",
+      "phase": "before_migration",
+      "time_cost": 20.410478799953125
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_before_migration_delete",
+      "phase": "before_migration",
+      "time_cost": 23.87257630005479
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_in_migration_migration",
+      "phase": "in_migration_state",
+      "time_cost": 0.43380780005827546
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_in_migration_select",
+      "phase": "in_migration_state",
+      "time_cost": 0.0047623999416828156
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_in_migration_insert",
+      "phase": "in_migration_state",
+      "time_cost": 35.88228270004038
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_in_migration_update",
+      "phase": "in_migration_state",
+      "time_cost": 16.016363499918953
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_in_migration_delete",
+      "phase": "in_migration_state",
+      "time_cost": 23.129623700049706
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_finishing_migration",
+      "phase": "after_migration",
+      "time_cost": 1.1240628000814468
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_after_migration_select",
+      "phase": "after_migration",
+      "time_cost": 0.005424299975857139
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_after_migration_insert",
+      "phase": "after_migration",
+      "time_cost": 26.34402260009665
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_after_migration_update",
+      "phase": "after_migration",
+      "time_cost": 18.990175199927762
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_after_migration_delete",
+      "phase": "after_migration",
+      "time_cost": 25.79056460002903
     }
   ]
 }

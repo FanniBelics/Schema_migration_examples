@@ -1,0 +1,22 @@
+update SH.CUSTOMERS
+set CUST_FULL_NAME = CUST_FIRST_NAME || ' ' || CUST_LAST_NAME
+where SCHEMA_VERSION = 1
+/
+
+alter table SH.CUSTOMERS
+drop column CUST_FIRST_NAME
+/
+
+alter table SH.CUSTOMERS
+drop column CUST_LAST_NAME
+/
+
+alter table SH.CUSTOMERS
+drop column SCHEMA_VERSION
+/
+
+drop trigger SH.CUSTOMERS_UPDATE_SCHEMA_VERSION_TGR
+/
+
+drop trigger SH.CUSTOMERS_MERGE_NAME_AUTOMATICALLY_TGR
+/
