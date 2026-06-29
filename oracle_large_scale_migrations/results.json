@@ -121,6 +121,128 @@
       "step_name": "merge_first_and_last_name_in_customer_after_migration_delete",
       "phase": "after_migration",
       "time_cost": 25.79056460002903
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_before_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.04419329995289445
+    }
+  ],
+  "adding_not_null_constraint_to_customer": [
+    {
+      "step_name": "add_not_null_constraint_to_customer_before_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.005230900016613305
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_before_migration_insert",
+      "phase": "before_migration",
+      "time_cost": 16.385584899922833
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_before_migration_update",
+      "phase": "before_migration",
+      "time_cost": 14.124565900070593
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_before_migration_delete",
+      "phase": "before_migration",
+      "time_cost": 21.864117700024508
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_add_constraint",
+      "phase": "in_migration_state",
+      "time_cost": 0.10827940003946424
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_select",
+      "phase": "in_migration_state",
+      "time_cost": 0.004163299920037389
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_insert",
+      "phase": "in_migration_state",
+      "time_cost": 16.857656600070186
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_update",
+      "phase": "in_migration_state",
+      "time_cost": 14.909920900012366
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_delete",
+      "phase": "in_migration_state",
+      "time_cost": 22.167929999995977
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_before_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.007565499981865287
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_before_migration_insert",
+      "phase": "before_migration",
+      "time_cost": 15.990434500039555
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_before_migration_update",
+      "phase": "before_migration",
+      "time_cost": 14.126411100034602
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_before_migration_delete",
+      "phase": "before_migration",
+      "time_cost": 21.800783900078386
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_add_constraint",
+      "phase": "in_migration_state",
+      "time_cost": 0.11361610004678369
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_select",
+      "phase": "in_migration_state",
+      "time_cost": 0.004306199960410595
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_insert",
+      "phase": "in_migration_state",
+      "time_cost": 18.60852959996555
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_update",
+      "phase": "in_migration_state",
+      "time_cost": 14.105684800073504
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_delete",
+      "phase": "in_migration_state",
+      "time_cost": 22.247845500009134
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_after_migration_close_migration",
+      "phase": "after_migration",
+      "time_cost": 0.0657892000162974
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_after_migration_select",
+      "phase": "after_migration",
+      "time_cost": 0.006438300013542175
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_after_migration_insert",
+      "phase": "after_migration",
+      "time_cost": 18.792978500016034
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_after_migration_update",
+      "phase": "after_migration",
+      "time_cost": 16.414100499940105
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_after_migration_delete",
+      "phase": "after_migration",
+      "time_cost": 25.139181699953042
     }
   ]
 }
