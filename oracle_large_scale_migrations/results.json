@@ -316,5 +316,77 @@
       "phase": "after_migration",
       "time_cost": 32.757621499942616
     }
+  ],
+  "wrap_columns": [
+    {
+      "step_name": "wrap_customer_contact_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.004646199988201261
+    },
+    {
+      "step_name": "wrap_customer_contact_before_migration_insert",
+      "phase": "before_migration",
+      "time_cost": 18.640669599873945
+    },
+    {
+      "step_name": "wrap_customer_contact_before_migration_update",
+      "phase": "before_migration",
+      "time_cost": 15.521549199940637
+    },
+    {
+      "step_name": "wrap_customer_contact_before_migration_delete",
+      "phase": "before_migration",
+      "time_cost": 23.593238400062546
+    },
+    {
+      "step_name": "wrap_customer_contact_in_migration_migration",
+      "phase": "in_migration_state",
+      "time_cost": 0.7783427000977099
+    },
+    {
+      "step_name": "wrap_customer_contact_in_migration_select",
+      "phase": "in_migration_state",
+      "time_cost": 0.17204389977268875
+    },
+    {
+      "step_name": "wrap_customer_contact_in_migration_insert",
+      "phase": "in_migration_state",
+      "time_cost": 20.644851200049743
+    },
+    {
+      "step_name": "wrap_customer_contact_in_migration_update",
+      "phase": "in_migration_state",
+      "time_cost": 15.276200799969956
+    },
+    {
+      "step_name": "wrap_customer_contact_in_migration_delete",
+      "phase": "in_migration_state",
+      "time_cost": 25.07486900012009
+    },
+    {
+      "step_name": "wrap_customer_contact_after_migration_close_migration",
+      "phase": "after_migration",
+      "time_cost": 1.8686567000113428
+    },
+    {
+      "step_name": "wrap_customer_contact_after_migration_select",
+      "phase": "after_migration",
+      "time_cost": 0.0060079998802393675
+    },
+    {
+      "step_name": "wrap_customer_contact_after_migration_insert",
+      "phase": "after_migration",
+      "time_cost": 20.688023099908605
+    },
+    {
+      "step_name": "wrap_customer_contact_after_migration_update",
+      "phase": "after_migration",
+      "time_cost": 17.0270879000891
+    },
+    {
+      "step_name": "wrap_customer_contact_after_migration_delete",
+      "phase": "after_migration",
+      "time_cost": 24.52899290015921
+    }
   ]
 }
