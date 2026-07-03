@@ -388,5 +388,77 @@
       "phase": "after_migration",
       "time_cost": 24.52899290015921
     }
+  ],
+  "divide_income_column_in_customer": [
+    {
+      "step_name": "divide_income_column_in_customer_before_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.14827760006301105
+    },
+    {
+      "step_name": "divide_income_column_in_customer_before_migration_insert",
+      "phase": "before_migration",
+      "time_cost": 20.41412749979645
+    },
+    {
+      "step_name": "divide_income_column_in_customer_before_migration_update",
+      "phase": "before_migration",
+      "time_cost": 16.64866519998759
+    },
+    {
+      "step_name": "divide_income_column_in_customer_before_migration_delete",
+      "phase": "before_migration",
+      "time_cost": 24.904975000070408
+    },
+    {
+      "step_name": "divide_income_column_in_customer_in_migration_migration",
+      "phase": "in_migration_state",
+      "time_cost": 0.23941610008478165
+    },
+    {
+      "step_name": "divide_income_column_in_customer_in_migration_select",
+      "phase": "in_migration_state",
+      "time_cost": 0.005016700131818652
+    },
+    {
+      "step_name": "divide_income_column_in_customer_in_migration_insert",
+      "phase": "in_migration_state",
+      "time_cost": 21.9848962998949
+    },
+    {
+      "step_name": "divide_income_column_in_customer_in_migration_update",
+      "phase": "in_migration_state",
+      "time_cost": 16.47444529994391
+    },
+    {
+      "step_name": "divide_income_column_in_customer_in_migration_delete",
+      "phase": "in_migration_state",
+      "time_cost": 25.976669499883428
+    },
+    {
+      "step_name": "divide_income_column_in_customer_after_migration_close_migration",
+      "phase": "after_migration",
+      "time_cost": 1.6233731000684202
+    },
+    {
+      "step_name": "divide_income_column_in_customer_after_migration_select",
+      "phase": "after_migration",
+      "time_cost": 0.012602699920535088
+    },
+    {
+      "step_name": "divide_income_column_in_customer_after_migration_insert",
+      "phase": "after_migration",
+      "time_cost": 22.111499099992216
+    },
+    {
+      "step_name": "divide_income_column_in_customer_after_migration_update",
+      "phase": "after_migration",
+      "time_cost": 17.388969199964777
+    },
+    {
+      "step_name": "divide_income_column_in_customer_after_migration_delete",
+      "phase": "after_migration",
+      "time_cost": 26.345099000027403
+    }
   ]
 }
