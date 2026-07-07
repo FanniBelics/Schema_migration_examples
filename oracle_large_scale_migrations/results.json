@@ -460,5 +460,77 @@
       "phase": "after_migration",
       "time_cost": 26.345099000027403
     }
+  ],
+  "add_unique_constraint_to_product": [
+    {
+      "step_name": "add_unique_constraint_to_product_before_migration_insert",
+      "phase": "before_migration",
+      "time_cost": 14.993345600087196
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_before_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.03161689988337457
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_before_migration_update",
+      "phase": "before_migration",
+      "time_cost": 15.98714020010084
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_before_migration_delete",
+      "phase": "before_migration",
+      "time_cost": 24.855590699939057
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_in_migration_migration",
+      "phase": "in_migration_state",
+      "time_cost": 0.12245779996737838
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_in_migration_insert",
+      "phase": "in_migration_state",
+      "time_cost": 23.314162499969825
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_in_migration_select",
+      "phase": "in_migration_state",
+      "time_cost": 0.007294199895113707
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_in_migration_update",
+      "phase": "in_migration_state",
+      "time_cost": 16.91344469995238
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_in_migration_delete",
+      "phase": "in_migration_state",
+      "time_cost": 24.91720309993252
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_after_migration_close_migration",
+      "phase": "after_migration",
+      "time_cost": 0.19096250017173588
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_after_migration_insert",
+      "phase": "after_migration",
+      "time_cost": 17.646659099962562
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_after_migration_select",
+      "phase": "after_migration",
+      "time_cost": 0.04301810008473694
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_after_migration_update",
+      "phase": "after_migration",
+      "time_cost": 19.207721200073138
+    },
+    {
+      "step_name": "add_unique_constraint_to_product_after_migration_delete",
+      "phase": "after_migration",
+      "time_cost": 26.214209200115874
+    }
   ]
 }

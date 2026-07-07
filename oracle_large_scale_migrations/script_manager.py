@@ -763,7 +763,135 @@ def divide_income_column_in_customer():
         results[json_tags.phase.value] = states.after_migration.value
         
     record_step(label, results)
+    
+def add_unique_constraint_to_product():
+    label = "add_unique_constraint_to_product"
+    
+    print("Exec: before migration insert")
+    with measure("add_unique_constraint_to_product_before_migration_insert") as results:
+        execute_sql_file("add_unique_constraint/add_unique_before_migration_insert.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_before_migration_insert'
+        results[json_tags.phase.value] = states.before_migration.value
+        
+    record_step(label, results)
+    
+    print("Exec: before migration select")
+    with measure("add_unique_constraint_to_product_before_migration_select") as results:
+        execute_sql_file("add_unique_constraint/add_unique_migration_select.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_before_migration_select'
+        results[json_tags.phase.value] = states.before_migration.value
+        
+    record_step(label, results)
+    
+    print("Exec: before migration update")
+    with measure("add_unique_constraint_to_product_before_migration_update") as results:
+        execute_sql_file("add_unique_constraint/add_unique_migration_update.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_before_migration_update'
+        results[json_tags.phase.value] = states.before_migration.value
+        
+    record_step(label, results)
+    
+    print("Exec: before migration delete")
+    with measure("add_unique_constraint_to_product_before_migration_delete") as results:
+        execute_sql_file("add_unique_constraint/add_unique_migration_delete.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_before_migration_delete'
+        results[json_tags.phase.value] = states.before_migration.value
+        
+    record_step(label, results)
+    
+    print("Exec: migration")
+    with measure("add_unique_constraint_to_product_in_migration_migration") as results:
+        execute_sql_file("add_unique_constraint/add_unique_in_migration_migration.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_in_migration_migration'
+        results[json_tags.phase.value] = states.in_migration_state.value
+        
+    record_step(label, results)
+    
+    print("Exec: in migration insert")
+    with measure("add_unique_constraint_to_product_in_migration_insert") as results:
+        execute_sql_file("add_unique_constraint/add_unique_in_migration_insert.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_in_migration_insert'
+        results[json_tags.phase.value] = states.in_migration_state.value
+        
+    record_step(label, results)
+    
+    print("Exec: in migration select")
+    with measure("add_unique_constraint_to_product_in_migration_select") as results:
+        execute_sql_file("add_unique_constraint/add_unique_migration_select.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_in_migration_select'
+        results[json_tags.phase.value] = states.in_migration_state.value
+        
+    record_step(label, results)
+    
+    print("Exec: in migration update")
+    with measure("add_unique_constraint_to_product_in_migration_update") as results:
+        execute_sql_file("add_unique_constraint/add_unique_migration_update.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_in_migration_update'
+        results[json_tags.phase.value] = states.in_migration_state.value
+        
+    record_step(label, results)
+    
+    print("Exec: in migration delete")
+    with measure("add_unique_constraint_to_product_in_migration_delete") as results:
+        execute_sql_file("add_unique_constraint/add_unique_migration_delete.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_in_migration_delete'
+        results[json_tags.phase.value] = states.in_migration_state.value
+        
+    record_step(label, results)
 
+    print("Exec: after migration close migration")
+    with measure("add_unique_constraint_to_product_after_migration_close_migration") as results:
+        execute_sql_file("add_unique_constraint/add_unique_after_migration_close_migration.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_after_migration_close_migration'
+        results[json_tags.phase.value] = states.after_migration.value
+        
+    record_step(label, results)
+    
+    print("Exec: after migration insert")
+    with measure("add_unique_constraint_to_product_after_migration_insert") as results:
+        execute_sql_file("add_unique_constraint/add_unique_after_migration_insert.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_after_migration_insert'
+        results[json_tags.phase.value] = states.after_migration.value
+        
+    record_step(label, results)
+    
+    print("Exec: after migration select")
+    with measure("add_unique_constraint_to_product_after_migration_select") as results:
+        execute_sql_file("add_unique_constraint/add_unique_migration_select.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_after_migration_select'
+        results[json_tags.phase.value] = states.after_migration.value
+        
+    record_step(label, results)
+    
+    print("Exec: after migration update")
+    with measure("add_unique_constraint_to_product_after_migration_update") as results:
+        execute_sql_file("add_unique_constraint/add_unique_migration_update.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_after_migration_update'
+        results[json_tags.phase.value] = states.after_migration.value
+        
+    record_step(label, results)
+    
+    print("Exec: after migration delete")
+    with measure("add_unique_constraint_to_product_after_migration_delete") as results:
+        execute_sql_file("add_unique_constraint/add_unique_migration_delete.sql")
+        
+        results[json_tags.step_name.value] = 'add_unique_constraint_to_product_after_migration_delete'
+        results[json_tags.phase.value] = states.after_migration.value
+        
+    record_step(label, results)
 
 if __name__ == "__main__":
     # with measure("test_run") as results:
@@ -780,4 +908,5 @@ if __name__ == "__main__":
     #add_not_null_constraint_to_customer()
     #remove_not_null_constraint_from_customer()
     #wrap_customer_contact()
-    divide_income_column_in_customer()
+    #divide_income_column_in_customer()
+    add_unique_constraint_to_product()
