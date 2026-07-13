@@ -3,479 +3,584 @@
     {
       "step_name": "add_column_before_migration_insert",
       "phase": "before_migration",
-      "time_cost": 11.39913160004653
+      "time_cost": 9.964155800000299
     },
     {
       "step_name": "add_column_before_migration_select",
       "phase": "before_migration",
-      "time_cost": 0.0046605998650193214
+      "time_cost": 0.003105600015260279
     },
     {
       "step_name": "add_column_before_migration_update",
       "phase": "before_migration",
-      "time_cost": 13.55593160004355
+      "time_cost": 14.081166899995878
     },
     {
       "step_name": "add_column_before_migration_delete",
       "phase": "before_migration",
-      "time_cost": 57.00190980010666
+      "time_cost": 49.27596729999641
     },
     {
-      "step_name": "add_column_in_migration_migration",
+      "step_name": "add_column_in_migration_add_column",
       "phase": "in_migration_state",
-      "time_cost": 0.10355640016496181
+      "time_cost": 0.05094980000285432
+    },
+    {
+      "step_name": "add_column_in_migration_fill_columns",
+      "phase": "in_migration_state",
+      "time_cost": 0.0473348000086844
     },
     {
       "step_name": "add_column_after_migration_insert",
       "phase": "after_migration",
-      "time_cost": 10.854892500210553
+      "time_cost": 11.711834899993846
     },
     {
       "step_name": "add_column_after_migration_select",
       "phase": "after_migration",
-      "time_cost": 0.0029257999267429113
+      "time_cost": 0.0030350000015459955
     },
     {
       "step_name": "add_column_after_migration_update",
       "phase": "after_migration",
-      "time_cost": 13.698211499955505
+      "time_cost": 16.64268579997588
     },
     {
       "step_name": "add_column_after_migration_delete",
       "phase": "after_migration",
-      "time_cost": 59.379815800115466
+      "time_cost": 49.99617890000809
+    },
+    {
+      "step_name": "add_column_before_migration_insert",
+      "phase": "before_migration",
+      "time_cost": 14.804473000112921
+    },
+    {
+      "step_name": "add_column_before_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.024710600031539798
+    },
+    {
+      "step_name": "add_column_before_migration_update",
+      "phase": "before_migration",
+      "time_cost": 15.144496999913827
+    },
+    {
+      "step_name": "add_column_before_migration_delete",
+      "phase": "before_migration",
+      "time_cost": 48.30997920013033
+    },
+    {
+      "step_name": "add_column_in_migration_migration",
+      "phase": "in_migration_state",
+      "time_cost": 0.13097800011746585
+    },
+    {
+      "step_name": "add_column_after_migration_insert",
+      "phase": "after_migration",
+      "time_cost": 11.520491799805313
+    },
+    {
+      "step_name": "add_column_after_migration_select",
+      "phase": "after_migration",
+      "time_cost": 0.004283699905499816
+    },
+    {
+      "step_name": "add_column_after_migration_update",
+      "phase": "after_migration",
+      "time_cost": 15.10048809996806
+    },
+    {
+      "step_name": "add_column_after_migration_delete",
+      "phase": "after_migration",
+      "time_cost": 48.791050400119275
     }
   ],
   "merging_first_and_last_name_in_customer": [
     {
       "step_name": "merge_first_and_last_name_in_customer_before_migration_select",
       "phase": "before_migration",
-      "time_cost": 0.007007200038060546
+      "time_cost": 0.009527300018817186
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_before_migration_insert",
       "phase": "before_migration",
-      "time_cost": 17.475506199989468
+      "time_cost": 22.236899599898607
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_before_migration_update",
       "phase": "before_migration",
-      "time_cost": 14.916293099988252
+      "time_cost": 20.410478799953125
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_before_migration_delete",
       "phase": "before_migration",
-      "time_cost": 22.33206159994006
+      "time_cost": 23.87257630005479
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_in_migration_migration",
       "phase": "in_migration_state",
-      "time_cost": 0.3102730999235064
+      "time_cost": 0.43380780005827546
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_in_migration_select",
       "phase": "in_migration_state",
-      "time_cost": 0.005577400093898177
+      "time_cost": 0.0047623999416828156
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_in_migration_insert",
       "phase": "in_migration_state",
-      "time_cost": 36.92726820008829
+      "time_cost": 35.88228270004038
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_in_migration_update",
       "phase": "in_migration_state",
-      "time_cost": 14.99946409999393
+      "time_cost": 16.016363499918953
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_in_migration_delete",
       "phase": "in_migration_state",
-      "time_cost": 22.604078100062907
+      "time_cost": 23.129623700049706
     },
     {
-      "step_name": "merge_first_and_last_name_in_customer_after_migration_close_migration",
+      "step_name": "merge_first_and_last_name_in_customer_close_migration",
       "phase": "after_migration",
-      "time_cost": 1.5722294999286532
+      "time_cost": 1.1240628000814468
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_after_migration_select",
       "phase": "after_migration",
-      "time_cost": 0.007718199864029884
+      "time_cost": 0.005424299975857139
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_after_migration_insert",
       "phase": "after_migration",
-      "time_cost": 19.780148999998346
+      "time_cost": 26.34402260009665
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_after_migration_update",
       "phase": "after_migration",
-      "time_cost": 15.328438200056553
+      "time_cost": 18.990175199927762
     },
     {
       "step_name": "merge_first_and_last_name_in_customer_after_migration_delete",
       "phase": "after_migration",
-      "time_cost": 22.914136399980634
+      "time_cost": 25.79056460002903
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_before_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.04419329995289445
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_before_migration_select",
+      "phase": "before_migration",
+      "time_cost": 0.00759469997137785
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_before_migration_insert",
+      "phase": "before_migration",
+      "time_cost": 19.18299110000953
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_before_migration_update",
+      "phase": "before_migration",
+      "time_cost": 15.120293600019068
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_before_migration_delete",
+      "phase": "before_migration",
+      "time_cost": 23.086517799878493
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_in_migration_migration",
+      "phase": "in_migration_state",
+      "time_cost": 0.3323039000388235
+    },
+    {
+      "step_name": "merge_first_and_last_name_in_customer_in_migration_select",
+      "phase": "in_migration_state",
+      "time_cost": 0.005522000137716532
     }
   ],
   "adding_not_null_constraint_to_customer": [
     {
       "step_name": "add_not_null_constraint_to_customer_before_migration_select",
       "phase": "before_migration",
-      "time_cost": 0.003274899907410145
+      "time_cost": 0.005230900016613305
     },
     {
       "step_name": "add_not_null_constraint_to_customer_before_migration_insert",
       "phase": "before_migration",
-      "time_cost": 17.372469200054184
+      "time_cost": 16.385584899922833
     },
     {
       "step_name": "add_not_null_constraint_to_customer_before_migration_update",
       "phase": "before_migration",
-      "time_cost": 15.15282279998064
+      "time_cost": 14.124565900070593
     },
     {
       "step_name": "add_not_null_constraint_to_customer_before_migration_delete",
       "phase": "before_migration",
-      "time_cost": 22.452552899951115
+      "time_cost": 21.864117700024508
     },
     {
       "step_name": "add_not_null_constraint_to_customer_in_migration_migration",
       "phase": "in_migration_state",
-      "time_cost": 0.07451780000701547
+      "time_cost": 0.10827940003946424
     },
     {
       "step_name": "add_not_null_constraint_to_customer_in_migration_select",
       "phase": "in_migration_state",
-      "time_cost": 0.004009299911558628
+      "time_cost": 0.004163299920037389
     },
     {
       "step_name": "add_not_null_constraint_to_customer_in_migration_insert",
       "phase": "in_migration_state",
-      "time_cost": 18.545704999938607
+      "time_cost": 16.857656600070186
     },
     {
       "step_name": "add_not_null_constraint_to_customer_in_migration_update",
       "phase": "in_migration_state",
-      "time_cost": 15.164588899817318
+      "time_cost": 14.909920900012366
     },
     {
       "step_name": "add_not_null_constraint_to_customer_in_migration_delete",
       "phase": "in_migration_state",
-      "time_cost": 23.824931500013918
+      "time_cost": 22.167929999995977
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_select",
+      "phase": "in_migration_state",
+      "time_cost": 0.004306199960410595
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_insert",
+      "phase": "in_migration_state",
+      "time_cost": 18.60852959996555
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_update",
+      "phase": "in_migration_state",
+      "time_cost": 14.105684800073504
+    },
+    {
+      "step_name": "add_not_null_constraint_to_customer_in_migration_delete",
+      "phase": "in_migration_state",
+      "time_cost": 22.247845500009134
     },
     {
       "step_name": "add_not_null_constraint_to_customer_after_migration_close_migration",
       "phase": "after_migration",
-      "time_cost": 0.28506339993327856
+      "time_cost": 0.0657892000162974
     },
     {
       "step_name": "add_not_null_constraint_to_customer_after_migration_select",
       "phase": "after_migration",
-      "time_cost": 0.004938700003549457
+      "time_cost": 0.006438300013542175
     },
     {
       "step_name": "add_not_null_constraint_to_customer_after_migration_insert",
       "phase": "after_migration",
-      "time_cost": 17.797531999880448
+      "time_cost": 18.792978500016034
     },
     {
       "step_name": "add_not_null_constraint_to_customer_after_migration_update",
       "phase": "after_migration",
-      "time_cost": 15.232224899809808
+      "time_cost": 16.414100499940105
     },
     {
       "step_name": "add_not_null_constraint_to_customer_after_migration_delete",
       "phase": "after_migration",
-      "time_cost": 23.256634599994868
+      "time_cost": 25.139181699953042
     }
   ],
   "removing_not_null_constraint_from_customer": [
     {
       "step_name": "remove_not_null_constraint_from_customer_before_migration_select",
       "phase": "before_migration",
-      "time_cost": 0.0037932000122964382
+      "time_cost": 0.007140799891203642
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_before_migration_insert",
       "phase": "before_migration",
-      "time_cost": 17.78639560006559
+      "time_cost": 17.219655900029466
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_before_migration_update",
       "phase": "before_migration",
-      "time_cost": 17.774293299997225
+      "time_cost": 15.39337780000642
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_before_migration_delete",
       "phase": "before_migration",
-      "time_cost": 23.40984099986963
+      "time_cost": 22.48562779999338
     },
     {
-      "step_name": "remove_not_null_constraint_from_customer_in_migration_migration",
+      "step_name": "remove_not_null_constraint_from_customer_migration_migration",
       "phase": "in_migration_state",
-      "time_cost": 0.11645770003087819
+      "time_cost": 0.19026220007799566
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_in_migration_select",
       "phase": "in_migration_state",
-      "time_cost": 0.004036499885842204
+      "time_cost": 0.004130200017243624
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_in_migration_insert",
       "phase": "in_migration_state",
-      "time_cost": 19.353753299918026
+      "time_cost": 18.25809310004115
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_in_migration_update",
       "phase": "in_migration_state",
-      "time_cost": 16.36025460017845
+      "time_cost": 14.789825200103223
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_in_migration_delete",
       "phase": "in_migration_state",
-      "time_cost": 24.753075700020418
+      "time_cost": 22.67412559990771
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_after_migration_close_migration",
       "phase": "after_migration",
-      "time_cost": 0.18199640000239015
+      "time_cost": 0.3138137001078576
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_after_migration_select",
       "phase": "after_migration",
-      "time_cost": 0.006157399853691459
+      "time_cost": 0.004736100090667605
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_after_migration_insert",
       "phase": "after_migration",
-      "time_cost": 18.88800529995933
+      "time_cost": 40.168898600153625
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_after_migration_update",
       "phase": "after_migration",
-      "time_cost": 16.2698548999615
+      "time_cost": 39.4438370000571
     },
     {
       "step_name": "remove_not_null_constraint_from_customer_after_migration_delete",
       "phase": "after_migration",
-      "time_cost": 23.40718189999461
+      "time_cost": 32.757621499942616
     }
   ],
   "wrap_columns": [
     {
       "step_name": "wrap_customer_contact_migration_select",
       "phase": "before_migration",
-      "time_cost": 0.004020600114017725
+      "time_cost": 0.004646199988201261
     },
     {
       "step_name": "wrap_customer_contact_before_migration_insert",
       "phase": "before_migration",
-      "time_cost": 18.582520300056785
+      "time_cost": 18.640669599873945
     },
     {
       "step_name": "wrap_customer_contact_before_migration_update",
       "phase": "before_migration",
-      "time_cost": 15.639017299981788
+      "time_cost": 15.521549199940637
     },
     {
       "step_name": "wrap_customer_contact_before_migration_delete",
       "phase": "before_migration",
-      "time_cost": 24.342832899885252
+      "time_cost": 23.593238400062546
     },
     {
       "step_name": "wrap_customer_contact_in_migration_migration",
       "phase": "in_migration_state",
-      "time_cost": 0.41846379986964166
+      "time_cost": 0.7783427000977099
     },
     {
       "step_name": "wrap_customer_contact_in_migration_select",
       "phase": "in_migration_state",
-      "time_cost": 0.27408700017258525
+      "time_cost": 0.17204389977268875
     },
     {
       "step_name": "wrap_customer_contact_in_migration_insert",
       "phase": "in_migration_state",
-      "time_cost": 21.7242825999856
+      "time_cost": 20.644851200049743
     },
     {
       "step_name": "wrap_customer_contact_in_migration_update",
       "phase": "in_migration_state",
-      "time_cost": 17.040394300129265
+      "time_cost": 15.276200799969956
     },
     {
       "step_name": "wrap_customer_contact_in_migration_delete",
       "phase": "in_migration_state",
-      "time_cost": 23.682198100024834
+      "time_cost": 25.07486900012009
     },
     {
       "step_name": "wrap_customer_contact_after_migration_close_migration",
       "phase": "after_migration",
-      "time_cost": 2.3649498999584466
+      "time_cost": 1.8686567000113428
     },
     {
       "step_name": "wrap_customer_contact_after_migration_select",
       "phase": "after_migration",
-      "time_cost": 0.005689200013875961
+      "time_cost": 0.0060079998802393675
     },
     {
       "step_name": "wrap_customer_contact_after_migration_insert",
       "phase": "after_migration",
-      "time_cost": 20.50190469995141
+      "time_cost": 20.688023099908605
     },
     {
       "step_name": "wrap_customer_contact_after_migration_update",
       "phase": "after_migration",
-      "time_cost": 17.196629300015047
+      "time_cost": 17.0270879000891
     },
     {
       "step_name": "wrap_customer_contact_after_migration_delete",
       "phase": "after_migration",
-      "time_cost": 24.00699430005625
+      "time_cost": 24.52899290015921
     }
   ],
   "divide_income_column_in_customer": [
     {
       "step_name": "divide_income_column_in_customer_before_migration_select",
       "phase": "before_migration",
-      "time_cost": 0.004203099990263581
+      "time_cost": 0.14827760006301105
     },
     {
       "step_name": "divide_income_column_in_customer_before_migration_insert",
       "phase": "before_migration",
-      "time_cost": 21.381220999872312
+      "time_cost": 20.41412749979645
     },
     {
       "step_name": "divide_income_column_in_customer_before_migration_update",
       "phase": "before_migration",
-      "time_cost": 16.652808299986646
+      "time_cost": 16.64866519998759
     },
     {
       "step_name": "divide_income_column_in_customer_before_migration_delete",
       "phase": "before_migration",
-      "time_cost": 24.031001900089905
+      "time_cost": 24.904975000070408
     },
     {
       "step_name": "divide_income_column_in_customer_in_migration_migration",
       "phase": "in_migration_state",
-      "time_cost": 0.1968844998627901
+      "time_cost": 0.23941610008478165
     },
     {
       "step_name": "divide_income_column_in_customer_in_migration_select",
       "phase": "in_migration_state",
-      "time_cost": 0.004925200017169118
+      "time_cost": 0.005016700131818652
     },
     {
       "step_name": "divide_income_column_in_customer_in_migration_insert",
       "phase": "in_migration_state",
-      "time_cost": 20.892929000081494
+      "time_cost": 21.9848962998949
     },
     {
       "step_name": "divide_income_column_in_customer_in_migration_update",
       "phase": "in_migration_state",
-      "time_cost": 19.99005059991032
+      "time_cost": 16.47444529994391
     },
     {
       "step_name": "divide_income_column_in_customer_in_migration_delete",
       "phase": "in_migration_state",
-      "time_cost": 24.430689099943265
+      "time_cost": 25.976669499883428
     },
     {
       "step_name": "divide_income_column_in_customer_after_migration_close_migration",
       "phase": "after_migration",
-      "time_cost": 1.0780819000210613
+      "time_cost": 1.6233731000684202
     },
     {
       "step_name": "divide_income_column_in_customer_after_migration_select",
       "phase": "after_migration",
-      "time_cost": 0.005389800062403083
+      "time_cost": 0.012602699920535088
     },
     {
       "step_name": "divide_income_column_in_customer_after_migration_insert",
       "phase": "after_migration",
-      "time_cost": 19.870753800030798
+      "time_cost": 22.111499099992216
     },
     {
       "step_name": "divide_income_column_in_customer_after_migration_update",
       "phase": "after_migration",
-      "time_cost": 16.356776600005105
+      "time_cost": 17.388969199964777
     },
     {
       "step_name": "divide_income_column_in_customer_after_migration_delete",
       "phase": "after_migration",
-      "time_cost": 26.52573850005865
+      "time_cost": 26.345099000027403
     }
   ],
   "add_unique_constraint_to_product": [
     {
       "step_name": "add_unique_constraint_to_product_before_migration_insert",
       "phase": "before_migration",
-      "time_cost": 18.578559400048107
+      "time_cost": 14.993345600087196
     },
     {
       "step_name": "add_unique_constraint_to_product_before_migration_select",
       "phase": "before_migration",
-      "time_cost": 0.014799700118601322
+      "time_cost": 0.03161689988337457
     },
     {
       "step_name": "add_unique_constraint_to_product_before_migration_update",
       "phase": "before_migration",
-      "time_cost": 18.11354500008747
+      "time_cost": 15.98714020010084
     },
     {
       "step_name": "add_unique_constraint_to_product_before_migration_delete",
       "phase": "before_migration",
-      "time_cost": 28.351438799872994
+      "time_cost": 24.855590699939057
     },
     {
       "step_name": "add_unique_constraint_to_product_in_migration_migration",
       "phase": "in_migration_state",
-      "time_cost": 0.127509499900043
+      "time_cost": 0.12245779996737838
     },
     {
       "step_name": "add_unique_constraint_to_product_in_migration_insert",
       "phase": "in_migration_state",
-      "time_cost": 25.85140489996411
+      "time_cost": 23.314162499969825
     },
     {
       "step_name": "add_unique_constraint_to_product_in_migration_select",
       "phase": "in_migration_state",
-      "time_cost": 0.004727200139313936
+      "time_cost": 0.007294199895113707
     },
     {
       "step_name": "add_unique_constraint_to_product_in_migration_update",
       "phase": "in_migration_state",
-      "time_cost": 18.31948519987054
+      "time_cost": 16.91344469995238
     },
     {
       "step_name": "add_unique_constraint_to_product_in_migration_delete",
       "phase": "in_migration_state",
-      "time_cost": 27.897911599837244
+      "time_cost": 24.91720309993252
     },
     {
       "step_name": "add_unique_constraint_to_product_after_migration_close_migration",
       "phase": "after_migration",
-      "time_cost": 0.12289620004594326
+      "time_cost": 0.19096250017173588
     },
     {
       "step_name": "add_unique_constraint_to_product_after_migration_insert",
       "phase": "after_migration",
-      "time_cost": 18.411642499966547
+      "time_cost": 17.646659099962562
     },
     {
       "step_name": "add_unique_constraint_to_product_after_migration_select",
       "phase": "after_migration",
-      "time_cost": 0.008763900026679039
+      "time_cost": 0.04301810008473694
     },
     {
       "step_name": "add_unique_constraint_to_product_after_migration_update",
       "phase": "after_migration",
-      "time_cost": 18.199856200022623
+      "time_cost": 19.207721200073138
     },
     {
       "step_name": "add_unique_constraint_to_product_after_migration_delete",
       "phase": "after_migration",
-      "time_cost": 27.118925800081342
+      "time_cost": 26.214209200115874
     }
   ]
 }

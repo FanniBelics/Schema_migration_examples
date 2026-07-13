@@ -60,21 +60,21 @@ def add_column_to_country():
     # Migration steps: adding new column 
     print("Exec: migration")
     with measure(label) as results_in_migration_adding:
-        execute_sql_file("add_column/add_column_to_country_in_migration_add_column.sql")
+        execute_sql_file("add_column/add_column_to_country_in_migration_migration.sql")
         
-        results_in_migration_adding[json_tags.step_name.value] = 'add_column_in_migration_add_column'
+        results_in_migration_adding[json_tags.step_name.value] = 'add_column_in_migration_migration'
         results_in_migration_adding[json_tags.phase.value] = states.in_migration_state.value
         
     record_step(label, results_in_migration_adding)
     
-    # Fill new column with data    
-    with measure(label) as results_in_migration_fill:
-        execute_sql_file("add_column/add_column_to_country_in_migration_fill_columns.sql")
+    # # Fill new column with data    
+    # with measure(label) as results_in_migration_fill:
+    #     execute_sql_file("add_column/add_column_to_country_in_migration_fill_columns.sql")
         
-        results_in_migration_fill[json_tags.step_name.value] = 'add_column_in_migration_fill_columns'
-        results_in_migration_fill[json_tags.phase.value] = states.in_migration_state.value
+    #     results_in_migration_fill[json_tags.step_name.value] = 'add_column_in_migration_fill_columns'
+    #     results_in_migration_fill[json_tags.phase.value] = states.in_migration_state.value
         
-    record_step(label, results_in_migration_fill)
+    # record_step(label, results_in_migration_fill)
         
     # Insert data after migration
     print("Exec: insert_after_migration")
@@ -207,7 +207,7 @@ def merge_first_and_last_name_in_customer():
     with measure(label) as results_finishing_migration:
         execute_sql_file("merge_columns/merge_columns_after_migration_close_migration.sql")
         
-        results_finishing_migration[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_finishing_migration'
+        results_finishing_migration[json_tags.step_name.value] = 'merge_first_and_last_name_in_customer_after_migration_close_migration'
         results_finishing_migration[json_tags.phase.value] = states.after_migration.value
         
     record_step(label, results_finishing_migration)
@@ -291,7 +291,7 @@ def add_not_null_constraint_to_customer():
     with measure(label) as results_in_migration:
         execute_sql_file("add_constraint/add_constraint_in_migration_migration.sql")
         
-        results_in_migration[json_tags.step_name.value] = 'add_not_null_constraint_to_customer_in_migration_add_constraint'
+        results_in_migration[json_tags.step_name.value] = 'add_not_null_constraint_to_customer_in_migration_migration'
         results_in_migration[json_tags.phase.value] = states.in_migration_state.value
         
     record_step(label, results_in_migration)
@@ -420,7 +420,7 @@ def remove_not_null_constraint_from_customer():
     with measure(label) as results_migration:
         execute_sql_file("remove_constraint/remove_constraint_in_migration_migration.sql")
         
-        results_migration[json_tags.step_name.value] = 'remove_not_null_constraint_from_customer_migration'
+        results_migration[json_tags.step_name.value] = 'remove_not_null_constraint_from_customer_in_migration_migration'
         results_migration[json_tags.phase.value] = states.in_migration_state.value
         
     record_step(label, results_migration) 
@@ -903,10 +903,10 @@ if __name__ == "__main__":
     # print(results)
     # record_step("test_additional_migration", results)
     
-    #add_column_to_country()
-    #merge_first_and_last_name_in_customer()
-    #add_not_null_constraint_to_customer()
-    #remove_not_null_constraint_from_customer()
-    #wrap_customer_contact()
-    #divide_income_column_in_customer()
+    add_column_to_country()
+    merge_first_and_last_name_in_customer()
+    add_not_null_constraint_to_customer()
+    remove_not_null_constraint_from_customer()
+    wrap_customer_contact()
+    divide_income_column_in_customer()
     add_unique_constraint_to_product()
